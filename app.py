@@ -6,5 +6,9 @@ app = Flask(__name__)
 def accueil():
     return render_template("index.html")
 
+@app.route("/action")
+def action():
+    return "🎉 Bouton cliqué ! Flask a réagi."
+
 if __name__ == "__main__":
     app.run(debug=True)
