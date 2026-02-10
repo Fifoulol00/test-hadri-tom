@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Application Web Test</title>
+
+    <!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Hello Flask 👋</h1>
     <p>Ma première application web fonctionne.</p>
+    <a href="/action">
+        <button class="btn">Clique-moi</button>
+    </a>
 </body>
 </html>
